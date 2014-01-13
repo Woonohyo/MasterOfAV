@@ -23,7 +23,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playVideo:" destination="R7V-np-sLA" eventType="touchUpInside" id="0n2-IY-bha"/>
+                                    <action selector="playVideo:" destination="R7V-np-sLA" eventType="touchUpInside" id="UPG-JL-sOR"/>
                                 </connections>
                             </button>
                         </subviews>

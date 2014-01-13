@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobileCoreServices/UTCoreTypes.h>  //
+#import <MediaPlayer/MediaPlayer.h>         // this gives me access to the MediaPlayer object.
 
 @interface NXPlayVideoViewController : UIViewController
 - (IBAction)playVideo:(id)sender;

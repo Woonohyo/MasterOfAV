@@ -7,8 +7,6 @@
 //
 
 #import "NXPlayVideoViewController.h"
-#import <MobileCoreServices/UTCoreTypes.h>  //
-#import <MediaPlayer/MediaPlayer.h>         // this gives me access to the MediaPlayer object.
 
 // this enables me to use the UIImagePickerController in my class.
 // PickerController offers a basic, customizable UI for taking pictures and recording movies.
@@ -60,7 +58,7 @@
     mediaUI.delegate = delegate;
     
     // 3 - Display image picker
-    [controller presentModalViewController:mediaUI animated:YES];
+    [controller presentViewController:mediaUI animated:YES completion:NULL];
     return YES;
 }
 @end
