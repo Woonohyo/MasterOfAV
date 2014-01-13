@@ -27,6 +27,9 @@
 		F1F29E92188406610026965B /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F29E91188406610026965B /* MediaPlayer.framework */; };
 		F1F29E94188406680026965B /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F29E93188406680026965B /* MobileCoreServices.framework */; };
 		F1F29E961884066F0026965B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1F29E951884066F0026965B /* QuartzCore.framework */; };
+		F1F29E99188408D00026965B /* NXPlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F29E98188408D00026965B /* NXPlayVideoViewController.m */; };
+		F1F29E9C188408E50026965B /* NXRecordVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F29E9B188408E50026965B /* NXRecordVideoViewController.m */; };
+		F1F29E9F188408F60026965B /* NXMergeVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1F29E9E188408F60026965B /* NXMergeVideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,12 @@
 		F1F29E91188406610026965B /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		F1F29E93188406680026965B /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F1F29E951884066F0026965B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F1F29E97188408D00026965B /* NXPlayVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXPlayVideoViewController.h; sourceTree = "<group>"; };
+		F1F29E98188408D00026965B /* NXPlayVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXPlayVideoViewController.m; sourceTree = "<group>"; };
+		F1F29E9A188408E50026965B /* NXRecordVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXRecordVideoViewController.h; sourceTree = "<group>"; };
+		F1F29E9B188408E50026965B /* NXRecordVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXRecordVideoViewController.m; sourceTree = "<group>"; };
+		F1F29E9D188408F60026965B /* NXMergeVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NXMergeVideoViewController.h; sourceTree = "<group>"; };
+		F1F29E9E188408F60026965B /* NXMergeVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NXMergeVideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +148,12 @@
 				F1F29E65188405390026965B /* NXAppDelegate.h */,
 				F1F29E66188405390026965B /* NXAppDelegate.m */,
 				F1F29E68188405390026965B /* Main.storyboard */,
+				F1F29E97188408D00026965B /* NXPlayVideoViewController.h */,
+				F1F29E98188408D00026965B /* NXPlayVideoViewController.m */,
+				F1F29E9A188408E50026965B /* NXRecordVideoViewController.h */,
+				F1F29E9B188408E50026965B /* NXRecordVideoViewController.m */,
+				F1F29E9D188408F60026965B /* NXMergeVideoViewController.h */,
+				F1F29E9E188408F60026965B /* NXMergeVideoViewController.m */,
 				F1F29E6B188405390026965B /* NXViewController.h */,
 				F1F29E6C188405390026965B /* NXViewController.m */,
 				F1F29E6E188405390026965B /* Images.xcassets */,
@@ -274,9 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1F29E99188408D00026965B /* NXPlayVideoViewController.m in Sources */,
 				F1F29E67188405390026965B /* NXAppDelegate.m in Sources */,
 				F1F29E63188405390026965B /* main.m in Sources */,
+				F1F29E9F188408F60026965B /* NXMergeVideoViewController.m in Sources */,
 				F1F29E6D188405390026965B /* NXViewController.m in Sources */,
+				F1F29E9C188408E50026965B /* NXRecordVideoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
