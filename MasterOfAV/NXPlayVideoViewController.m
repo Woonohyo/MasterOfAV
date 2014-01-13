@@ -7,9 +7,12 @@
 //
 
 #import "NXPlayVideoViewController.h"
+#import <MobileCoreServices/UTCoreTypes.h>  //
+#import <MediaPlayer/MediaPlayer.h>         // this gives me access to the MediaPlayer object.
 
-@interface NXPlayVideoViewController ()
-
+// this enables me to use the UIImagePickerController in my class.
+// PickerController offers a basic, customizable UI for taking pictures and recording movies.
+@interface NXPlayVideoViewController () <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @end
 
 @implementation NXPlayVideoViewController
@@ -26,6 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"PlayVideoViewController has called");
 	// Do any additional setup after loading the view.
 }
 
@@ -35,4 +39,28 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)playVideo:(id)sender {
+    [self startMediaBrowserFromViewController:self usingDelegate:self];
+}
+
+- (BOOL)startMediaBrowserFromViewController:(UIViewController *)controller usingDelegate:(id)delegate {
+    // 1 - Validation
+    if (([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum] == NO) || (delegate == nil) || (controller == nil)) {
+        return NO;
+    }
+    // 2 - Get image picker
+    UIImagePickerController *mediaUI = [[UIImagePickerController alloc] init];
+    mediaUI.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    mediaUI.mediaTypes = [[NSArray alloc] initWithObjects: (NSString *) kUTTypeMovie, nil];
+    
+    // Hides the controls for moving and scaling pictures, or for
+    // trimming movies. To instead show the controls, use YES.
+    mediaUI.allowsEditing = YES;
+    mediaUI.delegate = delegate;
+    
+    // 3 - Display image picker
+    [controller presentModalViewController:mediaUI animated:YES];
+    return YES;
+}
 @end

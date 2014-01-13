@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSLog(@"RecordVideoViewController has called");
 	// Do any additional setup after loading the view.
 }
 

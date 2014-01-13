@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface NXPlayVideoViewController : UIViewController
+- (IBAction)playVideo:(id)sender;
+
+// I need this to open an instance of UIImagePickerController as a pop up view.
+- (BOOL) startMediaBrowserFromViewController: (UIViewController*)controller usingDelegate: (id)delegate;
 
 @end
